@@ -2,6 +2,10 @@
   --primary-light-clr: rgba(29, 155, 240, 0.2);
   --primary-clr: rgb(29, 155, 240);
   --primary-dark-clr: rgb(26, 140, 216);
+  --primary-white-clr: white;
+  --primary-black-clr: rgb(15, 20, 25);
+
+  --accent-black-clr: rgb(83, 100, 113);
 
   --accent-green-clr: rgb(0, 186, 124);
   --accent-green-light-clr: rgba(0, 186, 124, 0.2);
@@ -9,9 +13,6 @@
   --accent-red-light-clr: rgba(249, 24, 128, 0.2);
   --accent-gray-clr: rgb(239, 243, 244);
   --accent-gray-light-clr: rgba(15, 20, 25, 0.1);
-
-  --primary-text-clr: rgb(15, 20, 25);
-  --accent-text-clr: rgb(83, 100, 113);
 
   --transparent-clr: rgba(0, 0, 0, 0);
   --transparent-dark-clr: rgba(0, 0, 0, 0.03);
