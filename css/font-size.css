@@ -1,0 +1,11 @@
+:root {
+  --large: 1.5rem;
+  --medium: 1.25rem;
+  --standard: 1rem;
+  --small: 0.9375rem;
+  --smallest: 0.8125rem;
+
+  --bolder: 800;
+  --bold: 700;
+  --normal: 400;
+}
