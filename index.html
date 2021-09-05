@@ -12,7 +12,6 @@
   <body>
     <header>
       <div class="header">
-        <div class="header-nav__logo"></div>
         <div class="header-nav">
           <div class="header-nav-logo">
             <svg
@@ -33,7 +32,10 @@
                 <svg
                   viewBox="0 0 24 24"
                   aria-hidden="true"
-                  class="header-menu-item-icon__svg"
+                  class="
+                    header-menu-item-icon__svg
+                    header-menu-item-icon__svg--selected
+                  "
                 >
                   <g>
                     <path
@@ -42,7 +44,11 @@
                   </g>
                 </svg>
               </div>
-              <div class="header-menu-item__text">Home</div>
+              <div
+                class="header-menu-item__text header-menu-item__text--selected"
+              >
+                Home
+              </div>
             </li>
             <li class="header-menu-item">
               <div class="header-menu-item-icon">
@@ -163,15 +169,24 @@
               <div class="header-menu-item__text">More</div>
             </li>
           </menu>
-          <div class="header-cta">Tweet</div>
+          <div class="btn btn--primary btn--large">Tweet</div>
         </div>
         <div class="header-user">
-          <div class="header-user__image"></div>
-          <div class="header-user-details">
-            <div class="header-user-details__visible-name">Bill Galston</div>
-            <div class="header-user-details__username">@BillGalston</div>
+          <div class="user">
+            <div class="user__pic user__pic--medium">
+              <img
+                class="user-photo"
+                src="./img/user_image.png"
+                alt="Bill Galston user picture"
+              />
+            </div>
+            <div class="user-details user-details--vertical">
+              <div class="user-details__visible-name">Bill Galston</div>
+              <div class="user-details__username">@BillGalston</div>
+            </div>
           </div>
-          <div class="header-user-options">
+
+          <div class="header-user__options">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
