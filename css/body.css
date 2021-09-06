@@ -1,0 +1,26 @@
+* {
+  font-family: TwitterChirp;
+  src: url(./type-style.css);
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+/* main */
+.main {
+  //   background-color: rgb(136, 173, 214);
+  width: 990px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__sidebar {
+  margin-right: 10px;
+}
