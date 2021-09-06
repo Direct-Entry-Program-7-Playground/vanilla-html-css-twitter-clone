@@ -1,12 +1,45 @@
 :root {
-  --large: 1.5rem;
-  --semi-bold: 1.25rem;
+  --extra-large: 1.5rem;
+  --large: 1.25rem;
   --medium: 1.0625rem;
   --standard: 1rem;
   --small: 0.9375rem;
-  --smallest: 0.8125rem;
+  --extra-small: 0.8125rem;
 
   --bolder: 800;
   --bold: 700;
   --normal: 400;
+}
+
+.text {
+  font-size: var(--standard);
+  font-weight: var(--normal);
+}
+
+.text_size_xlg {
+  font-size: var(--extra-large);
+}
+
+.text_size_lg {
+  font-size: var(--large);
+}
+
+.text_size_md {
+  font-size: var(--medium);
+}
+
+.text_size_sm {
+  font-size: var(--small);
+}
+
+.text_size_xsm {
+  font-size: var(--extra-small);
+}
+
+.text_weight_xbd {
+  font-weight: var(--bolder);
+}
+
+.text_weight_bd {
+  font-weight: var(--bold);
 }

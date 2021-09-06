@@ -100,14 +100,8 @@ main {
   margin-left: 20px;
   line-height: 24px;
   color: var(--primary-black-clr);
-  font-size: var(--semi-bold);
-  font-weight: var(--normal);
 }
 
-.header-menu-item__text--selected {
-  font-size: var(--semi-bold);
-  font-weight: var(--bold);
-}
 .btn {
   display: flex;
   justify-content: center;
@@ -129,8 +123,6 @@ main {
   min-height: 52px;
   padding-left: 32px;
   padding-right: 32px;
-  font-size: var(--medium);
-  font-weight: var(--bold);
 }
 
 .btn--secondary {
@@ -205,15 +197,11 @@ main {
 
 .user-details__visible-name {
   color: var(--primary-black-clr);
-  font-size: var(--small);
-  font-weight: var(--bold);
   line-height: 20px;
 }
 
 .user-details__username {
   color: var(--accent-black-clr);
-  font-size: var(--small);
-  font-weight: var(--normal);
   line-height: 20px;
 }
 

@@ -1,7 +1,7 @@
-@import url(./type-style.css);
-@import url(./font-size.css);
-@import url(./colors.css);
 @import url(./body.css);
 @import url(./header.css);
 @import url(./feed.css);
 @import url(./sidebar.css);
+@import url(./typeface.css);
+@import url(./colors.css);
+@import url(./font-size.css);
