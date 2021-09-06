@@ -1,0 +1,15 @@
+.svg {
+  fill: var(--primary-black-clr);
+  height: 1.25em;
+}
+.svg_size_lg {
+  height: 1.75em;
+}
+
+.svg_size_sm {
+  height: 1em;
+}
+
+.svg_color_acc {
+  fill: var(--accent-black-clr);
+}
