@@ -1,5 +1,33 @@
 .feed {
-  width: 600px;
-  height: 100vh;
+  max-width: 600px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
   background-color: lavender;
+}
+
+.post {
+  padding: 0 16px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media all and (max-width: 702px) {
+  .feed {
+    width: calc(100vw-88px);
+  }
+}
+@media all and (max-height: 499px) {
+  .feed {
+    height: fit-content;
+    z-index: 1;
+  }
+}
+@media all and (max-width: 499px) {
+  .feed {
+    height: fit-content;
+    z-index: 1;
+  }
 }

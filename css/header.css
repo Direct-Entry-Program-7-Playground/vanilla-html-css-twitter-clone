@@ -25,6 +25,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  height: 100%;
 }
 
 .header-nav-logo {
@@ -88,7 +89,9 @@ main {
   height: 1.75rem;
   width: 25px;
 }
-
+.svg-two {
+  display: none;
+}
 .header-menu-item__text {
   display: flex;
   flex-direction: row;
@@ -123,6 +126,14 @@ main {
   min-height: 52px;
   padding-left: 32px;
   padding-right: 32px;
+}
+.twitte__svg {
+  display: none;
+  width: 24px;
+  height: 24px;
+  color: var(--primary-white-clr);
+  max-width: 100%;
+  fill: currentcolor;
 }
 
 .btn--secondary {
@@ -213,4 +224,162 @@ main {
 
 .header-user-options__icon {
   height: 1.25em;
+}
+
+@media all and (max-width: 1264px) {
+  .header {
+    width: 88px;
+  }
+
+  .header-nav {
+    align-items: center;
+  }
+  .header-menu {
+    align-items: center;
+  }
+  .header-menu-item {
+    margin: 0;
+  }
+
+  .header-menu-item-icon {
+    height: 25px;
+  }
+
+  .header-menu-item__text {
+    display: none;
+  }
+
+  .twitte-btn__text {
+    display: none;
+  }
+
+  .twitte__svg {
+    display: block;
+  }
+
+  .twitte-btn {
+    display: flex;
+    justify-content: center;
+    width: 52px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .user-details,
+  .header-user__options {
+    display: none;
+  }
+  .header-user {
+    width: fit-content;
+  }
+  .user {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 1264px) and (max-height: 499px) {
+  .twitte-btn {
+    width: fit-content;
+    padding: 0 32px;
+  }
+  .twitte__svg {
+    display: block;
+    margin-right: 8px;
+  }
+  .twitte-btn__text {
+    display: block;
+  }
+}
+
+@media all and (max-width: 814px) and (max-height: 499px) {
+  .twitte-btn {
+    width: fit-content;
+  }
+
+  .twitte-btn__text {
+    display: none;
+  }
+
+  .twitte-btn {
+    width: fit-content;
+    padding: 0;
+  }
+  .twitte__svg {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-height: 614px) {
+  .header-menu-item:nth-of-type(5),
+  .header-menu-item:nth-of-type(6) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 987px) {
+  .svg-one {
+    display: none;
+  }
+  .svg-two {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media all and (max-width: 499px), (max-height: 499px) {
+  .header {
+    height: 52px;
+
+    order: 2;
+    width: 100%;
+    z-index: 2;
+  }
+  .header-nav-logo,
+  .header-user {
+    display: none;
+  }
+  .header-menu {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2px 0;
+    bottom: 0;
+    position: sticky;
+  }
+  .header-menu-item:nth-of-type(5),
+  .header-menu-item:nth-of-type(6),
+  .header-menu-item:nth-of-type(7),
+  .header-menu-item:nth-of-type(8) {
+    display: none;
+  }
+  .svg-one {
+    display: none;
+  }
+  .svg-two {
+    display: block;
+  }
+  .header-menu-item {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+  }
+  .header-menu-item-icon {
+    height: 25px;
+  }
+
+  .twitte-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+  }
+}
+
+@media all and (max-height: 499px) {
+  .header-menu-item__text {
+    display: none;
+  }
 }

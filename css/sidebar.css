@@ -32,3 +32,9 @@
   background-color: transparent;
   border: none;
 }
+
+@media all and (max-width: 987px) {
+  .sidebar {
+    display: none;
+  }
+}
