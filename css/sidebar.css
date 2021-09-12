@@ -9,11 +9,13 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color: var(--accent-gray-light-clr);
+  background-color: var(--accent-gray-clr);
   border-radius: 999px;
 }
 
 .sidebar__search {
+  margin-top: 4px;
+  margin-bottom: 12px;
 }
 
 .search__icon {
@@ -23,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--accent-black-clr);
 }
 
 .search__input {
@@ -33,6 +36,91 @@
   border: none;
 }
 
+.trend {
+  background-color: var(--accent-gray-clr);
+  border-radius: 16px;
+}
+.trend__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.trend__options {
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  color: var(--accent-black-clr);
+}
+
+.trend__options:hover {
+  background-color: var(--accent-gray-light-clr);
+}
+
+.trend-item__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent-black-clr);
+}
+.trend-item__topic {
+  line-height: 16px;
+}
+.trend-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.trend-item:hover {
+  background-color: var(--transparent-dark-clr);
+}
+.trend-item__options {
+  color: var(--accent-black-clr);
+
+  width: 34.75px;
+  height: 34.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.trend-item__options:hover {
+  background-color: var(--primary-light-clr);
+  color: var(--primary-clr);
+}
+.trend-item__title {
+  height: 20px;
+  padding-top: 2px;
+}
+.trend-item__tweets {
+  height: 16px;
+  padding-top: 4px;
+  color: var(--accent-black-clr);
+}
+
+.trend__footer {
+  padding: 16px;
+  color: var(--primary-clr);
+  cursor: pointer;
+}
+
+.trend__footer:hover {
+  background-color: var(--transparent-dark-clr);
+}
 @media all and (max-width: 987px) {
   .sidebar {
     display: none;
