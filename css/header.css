@@ -2,10 +2,6 @@ header {
   // background-color: rgb(241, 241, 241);
 }
 
-main {
-  background-color: rgb(205, 228, 255);
-}
-
 /* header */
 .header {
   position: sticky;
