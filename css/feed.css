@@ -4,8 +4,39 @@
   display: flex;
   flex-direction: column;
   background-color: lavender;
+  width: 100%;
+}
+.homebar {
+  display: flex;
+  padding: 0 16px;
+  height: 53px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-white-clr);
+  position: sticky;
+  top: 0;
+}
+.homebar__title {
+  line-height: 24px;
 }
 
+.homebar__icon {
+  transition-property: background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+}
+
+.homebar__svg {
+  width: 20px;
+  height: 20px;
+}
+.homebar__icon:hover {
+  background-color: var(--accent-gray-light-clr);
+}
 .post {
   padding: 0 16px;
   text-align: justify;

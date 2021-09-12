@@ -1,7 +1,3 @@
-header {
-  // background-color: rgb(241, 241, 241);
-}
-
 /* header */
 .header {
   position: sticky;
@@ -11,7 +7,7 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: stretch;
   padding: 0 12px;
 }
 
