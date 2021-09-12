@@ -1,4 +1,6 @@
 .feed {
+  position: relative;
+  top: 53px;
   max-width: 600px;
   width: fit-content;
   display: flex;
@@ -10,14 +12,25 @@
   display: flex;
   padding: 0 16px;
   height: 53px;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--primary-white-clr);
-  position: sticky;
+  position: fixed;
+  width: 600px;
   top: 0;
+}
+.homebar-pic__wrapper {
+  min-width: 56px;
+  display: none;
+  height: 32px;
+}
+.homebar__pic {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
 }
 .homebar__title {
   line-height: 24px;
+  flex-grow: 1;
 }
 
 .homebar__icon {
@@ -46,7 +59,8 @@
 }
 
 @media all and (max-width: 702px) {
-  .feed {
+  .feed,
+  .homebar {
     width: calc(100vw-88px);
   }
 }
@@ -54,11 +68,25 @@
   .feed {
     height: fit-content;
     z-index: 1;
+    top: 0;
+  }
+
+  .homebar {
+    width: 990px;
+  }
+
+  .homebar-pic__wrapper {
+    display: block;
   }
 }
+
 @media all and (max-width: 499px) {
   .feed {
     height: fit-content;
     z-index: 1;
+  }
+
+  .homebar-pic__wrapper {
+    display: block;
   }
 }

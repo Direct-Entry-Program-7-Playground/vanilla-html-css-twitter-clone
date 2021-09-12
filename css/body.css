@@ -94,6 +94,8 @@
 
   .main {
     max-width: 100vw;
+    position: relative;
+    top: 53px;
   }
 }
 @media all and (max-width: 499px), (max-height: 499px) {

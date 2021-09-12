@@ -247,7 +247,7 @@
 }
 
 @media all and (max-height: 499px) {
-  .search__wrapper {
+  .search {
     display: none;
   }
 }
