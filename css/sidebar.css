@@ -35,7 +35,11 @@
   background-color: transparent;
   border: none;
 }
-
+.sidebar__trend,
+.sidebar__search,
+.sidebar__follow {
+  margin-bottom: 16px;
+}
 .trend {
   background-color: var(--accent-gray-clr);
   border-radius: 16px;
@@ -122,6 +126,75 @@
   background-color: var(--transparent-dark-clr);
 }
 
+.follow {
+  background-color: var(--accent-gray-clr);
+  border-radius: 16px;
+}
+.follow__header {
+  height: 40px;
+}
+.follow__tilte {
+  padding: 12px 16px;
+}
+.follow__list {
+}
+.follow__footer {
+  padding: 16px;
+  color: var(--primary-clr);
+  cursor: pointer;
+}
+
+.follow__footer:hover {
+  background-color: var(--transparent-dark-clr);
+}
+
+.follow-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.follow-item:hover {
+  background-color: var(--transparent-dark-clr);
+}
+.follow-item__pic {
+  width: 46px;
+  height: 46px;
+  margin-right: 12px;
+  border-radius: 100%;
+}
+
+.follow-item__details {
+  width: 167px;
+  height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.follow-item__visible-name {
+  color: var(--primary-black-clr);
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.follow-item__username {
+  line-height: 20px;
+}
+
+.follow-item__visible-name:hover {
+  text-decoration: underline;
+}
+.follow-item__button {
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  margin-left: 12px;
+}
+
+.follow-item__button:hover {
+  background-color: var(--accent-black-light-clr);
+}
 @media all and (max-width: 1104px) {
   .sidebar {
     width: 290px;

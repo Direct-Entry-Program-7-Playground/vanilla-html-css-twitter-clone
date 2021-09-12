@@ -59,6 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 .header-menu-item {
   list-style: none;
@@ -104,29 +105,6 @@ main {
   line-height: 24px;
   color: var(--primary-black-clr);
 }
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: var(--primary-white-clr);
-  border-radius: 9999px;
-}
-
-.btn--primary {
-  box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
-  background-color: var(--primary-clr);
-  margin: 4px 0;
-}
-
-.btn--large {
-  width: 90%;
-  min-width: 52px;
-  min-height: 52px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
 .twitte__svg {
   display: none;
   width: 24px;
@@ -135,19 +113,6 @@ main {
   max-width: 100%;
   fill: currentcolor;
 }
-
-.btn--secondary {
-  background-color: var(--primary-black-clr);
-}
-
-.btn--normal {
-  width: 100%;
-  min-width: 32px;
-  min-height: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 /* header-user */
 .header-user {
   display: flex;
@@ -168,6 +133,7 @@ main {
 .user {
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .user__pic {
