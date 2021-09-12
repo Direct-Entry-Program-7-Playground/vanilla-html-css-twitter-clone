@@ -58,7 +58,7 @@
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 52px);
     width: 100%;
     justify-content: space-between;
   }

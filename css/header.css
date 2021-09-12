@@ -338,6 +338,11 @@ main {
     width: 100%;
     z-index: 2;
   }
+
+  .header-nav {
+    align-items: center;
+  }
+
   .header-nav-logo,
   .header-user {
     display: none;
@@ -347,7 +352,10 @@ main {
     justify-content: space-around;
     margin: 2px 0;
     bottom: 0;
-    position: sticky;
+    height: 52px;
+    background-color: var(--primary-white-clr);
+    position: fixed;
+    max-width: 990px;
   }
   .header-menu-item:nth-of-type(5),
   .header-menu-item:nth-of-type(6),
