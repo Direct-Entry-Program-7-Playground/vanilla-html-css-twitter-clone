@@ -121,6 +121,12 @@
 .trend__footer:hover {
   background-color: var(--transparent-dark-clr);
 }
+
+@media all and (max-width: 1104px) {
+  .sidebar {
+    width: 290px;
+  }
+}
 @media all and (max-width: 987px) {
   .sidebar {
     display: none;

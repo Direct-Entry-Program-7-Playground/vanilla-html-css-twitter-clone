@@ -27,7 +27,12 @@
   margin-right: 10px;
 }
 
-@media all and (max-width: 987px) {
+@media all and (max-width: 1104px) {
+  .main {
+    width: 920px;
+  }
+}
+@media all and (max-width: 1015px) {
   .main {
     width: fit-content;
   }
