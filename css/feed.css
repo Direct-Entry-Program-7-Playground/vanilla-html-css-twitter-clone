@@ -2,11 +2,11 @@
   position: relative;
   top: 53px;
   max-width: 600px;
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: lavender;
-  width: 100%;
+  border: solid 1px var(--accent-gray-clr);
+  border-top: none;
 }
 .homebar {
   display: flex;
@@ -17,6 +17,7 @@
   position: fixed;
   width: 600px;
   top: 0;
+  border: solid 1px var(--accent-gray-clr);
 }
 .homebar-pic__wrapper {
   min-width: 56px;
@@ -49,6 +50,77 @@
 }
 .homebar__icon:hover {
   background-color: var(--accent-gray-light-clr);
+}
+.tweet-box {
+  display: flex;
+  padding: 0 16px;
+}
+.tweet-box__photo {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+.tweet-box__post-creator {
+  padding-top: 4px;
+  width: 100%;
+}
+.tweet-box__msg {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid var(--accent-gray-clr);
+}
+
+.tweet-box__post-insert-bar {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 48px;
+}
+.tweet-box__inserts {
+  position: relative;
+  left: -8px;
+  display: flex;
+  margin-top: 12px;
+}
+.tweet-box_insert-item {
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+@media all and (max-width: 715px) {
+  .tweet-box_insert-item:nth-child(3),
+  .tweet-box_insert-item:last-child {
+    display: none;
+  }
+}
+
+.tweet-box_insert-item:hover {
+  background-color: var(--primary-light-clr);
+}
+.tweet-box_svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-clr);
+}
+.tweet-box__button {
+  height: 34px;
+  width: fit-content;
+  padding: 0 16px;
+  background-color: var(--primary-clr);
+  opacity: 0.5;
 }
 .post {
   padding: 0 16px;
@@ -84,6 +156,10 @@
   .feed {
     height: fit-content;
     z-index: 1;
+  }
+
+  .tweet-box {
+    display: none;
   }
 
   .homebar-pic__wrapper {
