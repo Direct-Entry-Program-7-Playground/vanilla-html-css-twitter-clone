@@ -73,7 +73,6 @@
   border: none;
   outline: none;
   width: 100%;
-  border-bottom: 1px solid var(--accent-gray-clr);
 }
 
 .tweet-box__post-insert-bar {
@@ -82,6 +81,7 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 48px;
+  padding-bottom: 4px;
 }
 .tweet-box__inserts {
   position: relative;
@@ -121,6 +121,13 @@
   padding: 0 16px;
   background-color: var(--primary-clr);
   opacity: 0.5;
+}
+.horizontal-divider {
+  height: 1px;
+  background-color: var(--accent-gray-clr);
+}
+.feed__horizontal-divider {
+  margin: 4px 0;
 }
 .post {
   padding: 0 16px;
