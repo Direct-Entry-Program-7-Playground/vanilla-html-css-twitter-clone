@@ -304,6 +304,7 @@
     height: fit-content;
     z-index: 1;
     top: 0;
+    width: 598px;
   }
   .tweet-box {
     display: none;
