@@ -128,8 +128,21 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.2s;
 }
-
+.post:hover {
+  background-color: var(--transparent-dark-clr);
+}
+.post-header {
+  padding-top: 12px;
+}
+.post-user__picture {
+  height: 46px;
+  width: 46px;
+  border-radius: 100%;
+}
 @media all and (max-width: 715px) {
   .tweet-box_insert-item:nth-child(3),
   .tweet-box_insert-item:last-child {
