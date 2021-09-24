@@ -74,7 +74,8 @@
 }
 @media all and (max-width: 1015px) {
   .main {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
   }
 
   .sidebar {
@@ -93,7 +94,7 @@
   }
 
   .main {
-    max-width: 100vw;
+    max-width: 600px;
     position: relative;
     top: 53px;
   }

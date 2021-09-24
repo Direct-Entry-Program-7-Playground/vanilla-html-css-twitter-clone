@@ -196,7 +196,7 @@
 .tweet-line {
   line-height: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .tweet-line--space {
   height: 20px;
