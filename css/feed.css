@@ -159,6 +159,10 @@
   .homebar-pic__wrapper {
     display: block;
   }
+
+  .feed__horizontal-divider {
+    display: none;
+  }
 }
 
 @media all and (max-width: 499px) {
@@ -171,6 +175,9 @@
     display: none;
   }
 
+  .feed__horizontal-divider {
+    display: none;
+  }
   .homebar-pic__wrapper {
     display: block;
   }
