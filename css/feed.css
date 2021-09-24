@@ -100,13 +100,6 @@
   transition-duration: 0.2s;
   cursor: pointer;
 }
-@media all and (max-width: 715px) {
-  .tweet-box_insert-item:nth-child(3),
-  .tweet-box_insert-item:last-child {
-    display: none;
-  }
-}
-
 .tweet-box_insert-item:hover {
   background-color: var(--primary-light-clr);
 }
@@ -137,6 +130,13 @@
   width: 100%;
 }
 
+@media all and (max-width: 715px) {
+  .tweet-box_insert-item:nth-child(3),
+  .tweet-box_insert-item:last-child {
+    display: none;
+  }
+}
+
 @media all and (max-width: 702px) {
   .feed,
   .homebar {
@@ -149,7 +149,9 @@
     z-index: 1;
     top: 0;
   }
-
+  .tweet-box {
+    display: none;
+  }
   .homebar {
     width: 990px;
   }
