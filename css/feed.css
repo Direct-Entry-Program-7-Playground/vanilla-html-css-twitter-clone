@@ -89,7 +89,8 @@
   display: flex;
   margin-top: 12px;
 }
-.tweet-box_insert-item {
+.tweet-box_insert-item,
+.post-header__option {
   height: 34px;
   width: 34px;
   display: flex;
@@ -126,7 +127,7 @@
   padding: 0 16px;
   text-align: justify;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   cursor: pointer;
   transition-property: background-color;
@@ -135,13 +136,90 @@
 .post:hover {
   background-color: var(--transparent-dark-clr);
 }
+.post-content {
+  width: 100%;
+}
 .post-header {
   padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.post-header__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .post-user__picture {
   height: 46px;
   width: 46px;
   border-radius: 100%;
+  margin-right: 12px;
+}
+.post-header__title,
+.post-header__dot,
+.post-header__tweet-handle,
+.post-header__post-time {
+  line-height: 20px;
+}
+.post-header__title {
+  text-decoration: none;
+  color: var(--primary-black-clr);
+}
+.post-header__title:hover {
+  text-decoration: underline;
+}
+.post-header__dot,
+.post-header__tweet-handle,
+.post-header__post-time {
+  color: var(--accent-black-clr);
+}
+.post-header__tweet-handle {
+  text-decoration: none;
+  padding-left: 4px;
+}
+.post-header__dot {
+  padding: 0 4px;
+}
+.post-header__option {
+  color: var(--accent-black-clr);
+}
+.post-header__option:hover {
+  color: var(--primary-clr);
+  background-color: var(--primary-clr-light);
+}
+.post-footer {
+  display: flex;
+  width: 425px;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.post-footer__item {
+  display: flex;
+  align-items: center;
+}
+.post-footer__count {
+  height: 20px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+.post-footer__like,
+.post-footer__share,
+.post-footer__retweet,
+.post-footer__reply {
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  width: 34.75px;
+  height: 34.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+}
+.post-footer__svg {
+  height: 18.75px;
+  width: 18.75px;
+  color: var(--accent-black-clr);
 }
 @media all and (max-width: 715px) {
   .tweet-box_insert-item:nth-child(3),

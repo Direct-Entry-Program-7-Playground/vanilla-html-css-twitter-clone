@@ -106,7 +106,8 @@
 }
 
 .trend-item__options:hover {
-  background-color: var(--primary-light-clr);
+  background-color: var(--primary-clr-light);
+
   color: var(--primary-clr);
 }
 .trend-item__title {
