@@ -138,6 +138,7 @@
 }
 .post-content {
   width: 100%;
+  padding-bottom: 12px;
 }
 .post-header {
   padding-top: 12px;
@@ -153,7 +154,7 @@
   height: 46px;
   width: 46px;
   border-radius: 100%;
-  margin-right: 12px;
+  margin: 12px 12px 0 0;
 }
 .post-header__title,
 .post-header__dot,
@@ -203,6 +204,25 @@
   display: flex;
   align-items: center;
 }
+
+.post-footer__item--like,
+.post-footer__item--share,
+.post-footer__item--retweet,
+.post-footer__item--reply {
+  color: var(--accent-black-clr);
+}
+.post-footer__item--reply:hover {
+  color: var(--primary-clr);
+}
+.post-footer__item--retweet:hover {
+  color: var(--accent-green-clr);
+}
+.post-footer__item--like:hover {
+  color: var(--accent-red-clr);
+}
+.post-footer__item--share:hover {
+  color: var(--primary-clr);
+}
 .post-footer__like,
 .post-footer__share,
 .post-footer__retweet,
@@ -215,11 +235,23 @@
   justify-content: center;
   align-items: center;
   margin: -8px;
+  border-radius: 100%;
+}
+.post-footer__reply:hover {
+  background-color: var(--primary-clr-light);
+}
+.post-footer__retweet:hover {
+  background-color: var(--accent-green-light-clr);
+}
+.post-footer__like:hover {
+  background-color: var(--accent-red-light-clr);
+}
+.post-footer__share:hover {
+  background-color: var(--primary-clr-light);
 }
 .post-footer__svg {
   height: 18.75px;
   width: 18.75px;
-  color: var(--accent-black-clr);
 }
 @media all and (max-width: 715px) {
   .tweet-box_insert-item:nth-child(3),
